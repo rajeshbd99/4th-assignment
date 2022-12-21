@@ -1,0 +1,38 @@
+//1.
+
+function radianToDegree(radian) {
+    degree = radian * (180 / 3.1416);
+    return degree;
+}
+
+//2.
+
+function isJavaScriptFile(file) {
+    if (typeof file !== 'string') {
+        return 'false';
+    }
+    else {
+        return file.toLowerCase().endsWith('.js');
+    }
+}
+
+//3.
+
+function oilPrrice(diesel, petrol, octane) {
+    totalPrice = (diesel * 114) + (petrol * 130) + (octane * 135);
+    return totalPrice;
+}
+
+//4.
+
+function publicBusFare(passenger) {
+    totalFare = ((passenger % 50) % 11) * 250;
+    return totalFare;
+}
+
+//5.
+
+function isBestFriend(person1, person2) {
+    bestFriend = (person1.name == person2.friend && person1.friend == person2.name);
+    return bestFriend;
+}
